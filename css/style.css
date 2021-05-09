@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #E8C966;
+    background: #f2f2a0;
     font-family: 'Lora', serif;
     font-size: 16px;
 }
@@ -144,10 +144,11 @@ main .btn{
 /*---Offers Cards---*/
 .headline {
     text-align: center;
-    padding-top: 25px;
+    margin-bottom: 20px;
+    padding-top: 35px;
     padding-bottom: 15px;
     text-shadow: 1px 2px;
-    background: rgba(255,191,0,0.3);
+    background: linear-gradient(to top,#E8C966, #f2f2f2);
 
 }
 
@@ -157,15 +158,14 @@ main .btn{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .cards {
     height: 350px;
     border-radius: 10px;
     margin: 15px;
     text-align: center;
-    background-color: rgba(255,191,0,0.3);
+    background-color: #f2f2f2;
     transition: .5s;
 }
 .cards .card-img {
@@ -223,11 +223,13 @@ main .btn{
     height: 130px;
     overflow: hidden;
 }
-.cards .price-tag {
+.cards button {
+    width: 100%;
     height: 45px;
-    padding-top: 15px;
-    background-color: #00e6ac;
+    border: none;
+    background-color: #E8C966;
     border-radius:0 0 10px 10px;
+    font-size: 1.2em;
 }
 .cards .price-tag span{
     font-size: 1.3em;
@@ -237,15 +239,126 @@ main .btn{
     box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
     cursor: default;
 }
-.cards a{
-    text-decoration: none;
-    color: #000;
-
+.cards button:hover {
+    cursor: pointer;
 }
-
 /*---Offers Cards End---*/
 
+/*--- The Modal ---*/
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height*/
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+    /* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 8% auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+.tour-title {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #E8C966;
+}
+  /* The Close Button */
+.close {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    color: #f2f2f2;
+    font-size: 2em;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+    /*-- Form design --*/
+.modal #frm {
+    background-color: #f2f2f2;
+    padding:20px 30px;
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+.modal #frm span {
+    font-size: .7em;
+    font-style: italic;
+}
+.modal input[type=number], .modal input[type=date] {
+    width: 100%;
+    padding: 7px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.modal input[type=button] {
+    width: 100%;
+    background-color: #E8C966;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal input[type=button]:hover {
+    background-color: rgba(255,191,0,0.3);
+}
+
+    /*--Hidden final amount--*/
+#finamt {
+    display: none;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 0px 30px 20px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+#finamt div {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#finamt button {
+    width: 100%;
+    background-color: #E8C966;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#finamt button:hover {
+    background-color: rgba(255,191,0,0.3);
+}
+
+/*----The Modal end----*/
 
 
 
@@ -343,10 +456,6 @@ main .btn{
     /*--Phone End--*/
 
 /*---FOOTER END---*/
-
-
-
-
 
 
 
