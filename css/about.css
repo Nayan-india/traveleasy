@@ -1,15 +1,67 @@
 body{
-	background-color: rgb(63, 63, 236);
+    background-color: #E8C966 ;
+} 
+.center
+{
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 25%;
+    border-style: outset;
+
+    font-size: 15px;
 }
-.center {
-	p.outset {border-style:outset;}
-	margin:auto;
-	width:25%;
-	border: 10px outset blue;
-	padding:20px;
-	text-align:center;
-	position:absolute;
-	top:30%;
-	left:35%;
-	font-size:15px;
+.con{
+  position: absolute;
+  bottom:  -15%;
+  left: 48%;
+  transform: translate(-53% ,-50%);
 }
+li{
+  list-style: none;
+  margin:  10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 20px;
+  color: #fff;
+  border : 1px solid #fff;
+  background: #55ACEE;
+  border-radius: 50%;
+  transition: .5s;
+}
+li:hover{
+  color:#292929;
+  border : 1px solid #292929;
+
+}
+
+/* Add a hover effect to icons if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+  /* Instagram */
+  .fa-instagram {
+    background: #c53b80;
+    color: white;
+  }
+  /* Youtube */
+  .fa-youtube {
+  
+    background: #c72633;
+    color: white;
+  } 
